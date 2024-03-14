@@ -1,5 +1,0 @@
-framework module KwaiAdsSDK {
-    umbrella header "KwaiAds.h"
-    export *
-    module * { export * }
-}
