@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
     s.ios.vendored_frameworks = 'KwaiAdsSDK.xcframework'
     s.frameworks = 'Foundation', 'UIKit', 'MobileCoreServices', 'CoreGraphics', 'Security', 'SystemConfiguration', 'CoreTelephony', 'AdSupport', 'CoreData', 'StoreKit', 'AVFoundation', 'MediaPlayer', 'CoreMedia', 'WebKit', 'Accelerate', 'CoreLocation', 'AVKit','MessageUI','QuickLook','AudioToolBox','JavaScriptCore', 'CoreMotion'
     s.libraries = 'z', 'resolv.9', 'sqlite3','c++','c++abi'
-
+    s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64' }
   end
