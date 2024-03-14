@@ -9,10 +9,12 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://www.kwai.com/'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'sunyonglong' => 'sunyonglong@kuaishou.com' }
-    s.source           = {:http => 'https://git.corp.kuaishou.com/'}  
+    s.source           = { :git => 'https://github.com/TakuMediation/KwaiAdsSDK', :tag => s.version.to_s }
     s.ios.deployment_target = '12.0'    
-    s.ios.vendored_frameworks = 'KwaiAdsSDK.xcframework'
+    s.ios.vendored_frameworks = 'KwaiAdsSDK.framework'
+    s.ios.resource = 'KCOSecurity.bundle','KSSecurityZTCore.bundle','KwaiAdsRIAIDService.bundle'
     s.frameworks = 'Foundation', 'UIKit', 'MobileCoreServices', 'CoreGraphics', 'Security', 'SystemConfiguration', 'CoreTelephony', 'AdSupport', 'CoreData', 'StoreKit', 'AVFoundation', 'MediaPlayer', 'CoreMedia', 'WebKit', 'Accelerate', 'CoreLocation', 'AVKit','MessageUI','QuickLook','AudioToolBox','JavaScriptCore', 'CoreMotion'
     s.libraries = 'z', 'resolv.9', 'sqlite3','c++','c++abi'
-
+    s.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
+    s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64' }
   end
