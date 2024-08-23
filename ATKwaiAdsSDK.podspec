@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ATKwaiAdsSDK'
-  s.version          = '1.0.6'
+  s.version          = '1.0.8'
   s.summary          = '海外商业化联盟SDK-42'
   s.description      = <<-DESC
   接入文档：https://docs.qingque.cn/d/home/eZQAPHN3SnfXTs-61wlQoniE_?identityId=1oEEBLW4oKJ
